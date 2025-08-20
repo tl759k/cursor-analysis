@@ -67,8 +67,8 @@ group by all
 
 , first_dash_ratio_avg as (
 select 
-  horizon
-  , avg(new_dx_ratio) new_dx_ratio
+  horizon as horizon_conv
+  , avg(new_dx_ratio) new_dx_cvr
 from first_dash_ratio
 where applied_week between '2024-01-01' and '2024-03-31'
 group by all
@@ -76,6 +76,6 @@ order by horizon asc
 )
 
 select * from first_dash_ratio_avg
-where horizon <= 52
+where horizon_conv <= 52
 ;
 

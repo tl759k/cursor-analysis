@@ -1,6 +1,7 @@
 select
     active_week
     , dateadd('week', horizon_spend, active_week) as forecast_week
+    , date_trunc('quarter', forecast_week) as forecast_quarter
     , scenario
     , case
         when scenario = 'throughQ1-3kMCPD' then 3000
@@ -27,6 +28,7 @@ from martech.dasher.dac_optimizer_granular_acquisition
 where true
   -- and scenario = 'planning-1kQ4Q1'
   -- and submarket_id = 0
-  and forecast_week = '2025-10-06'
+  and forecast_week >= '2025-10-06'
+  and forecast_week <= '2026-03-31'
 group by all
 order by forecast_week asc
