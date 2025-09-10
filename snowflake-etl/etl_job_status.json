@@ -1,0 +1,12 @@
+{
+  "step_0": {
+    "status": "RUNNING",
+    "last_updated": "2025-09-01 15:52:56",
+    "duration_seconds": null,
+    "attempt": 1,
+    "error_message": null,
+    "job_name": "Applicant Funnel Timestamp",
+    "table_name": "tbl_applicant_funnel_timestamp_with_backfill_snowflake",
+    "sql_file": "s0_tbl_applicant_funnel_timestamp_with_backfill_snowflake.sql"
+  }
+}

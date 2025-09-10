@@ -1,0 +1,34 @@
+[
+  {
+    "query": "step_0",
+    "table_name": "proddb.static.tbl_applicant_funnel_timestamp_with_backfill_snowflake",
+    "duration": "02:14",
+    "last_updated_at": "2025-09-01 16:13:43 PDT",
+    "status": "success",
+    "error": null
+  },
+  {
+    "query": "step_1",
+    "table_name": "proddb.static.tbl_major_steps_conversion_analysis_applied_L7D_cohort_snowflake",
+    "duration": "00:58",
+    "last_updated_at": "2025-09-01 16:14:43 PDT",
+    "status": "success",
+    "error": null
+  },
+  {
+    "query": "step_2",
+    "table_name": "proddb.static.tbl_cvr_reporting_metric_variances_snowflake",
+    "duration": "00:05",
+    "last_updated_at": "2025-09-01 16:14:50 PDT",
+    "status": "success",
+    "error": null
+  },
+  {
+    "query": "step_3",
+    "table_name": "proddb.static.tbl_conversion_funnel_idv_substeps_all_timestamps_snowflake",
+    "duration": "00:11",
+    "last_updated_at": "2025-09-01 16:15:03 PDT",
+    "status": "success",
+    "error": null
+  }
+]

@@ -1,0 +1,62 @@
+-- Create a temporary table for state name to abbreviation mapping
+create or replace table proddb.static.tbl_state_name_to_state_abbr_mapping (
+    state_name varchar,
+    state_abbr varchar
+);
+
+-- Insert values for all 50 states (plus DC if needed)
+INSERT INTO proddb.static.tbl_state_name_to_state_abbr_mapping (state_name, state_abbr) VALUES
+    ('Alabama', 'AL'),
+    ('Alaska', 'AK'),
+    ('Arizona', 'AZ'),
+    ('Arkansas', 'AR'),
+    ('California', 'CA'),
+    ('Colorado', 'CO'),
+    ('Connecticut', 'CT'),
+    ('Delaware', 'DE'),
+    ('District of Columbia', 'DC'),
+    ('Florida', 'FL'),
+    ('Georgia', 'GA'),
+    ('Hawaii', 'HI'),
+    ('Idaho', 'ID'),
+    ('Illinois', 'IL'),
+    ('Indiana', 'IN'),
+    ('Iowa', 'IA'),
+    ('Kansas', 'KS'),
+    ('Kentucky', 'KY'),
+    ('Louisiana', 'LA'),
+    ('Maine', 'ME'),
+    ('Maryland', 'MD'),
+    ('Massachusetts', 'MA'),
+    ('Michigan', 'MI'),
+    ('Minnesota', 'MN'),
+    ('Mississippi', 'MS'),
+    ('Missouri', 'MO'),
+    ('Montana', 'MT'),
+    ('Nebraska', 'NE'),
+    ('Nevada', 'NV'),
+    ('New Hampshire', 'NH'),
+    ('New Jersey', 'NJ'),
+    ('New Mexico', 'NM'),
+    ('New York', 'NY'),
+    ('North Carolina', 'NC'),
+    ('North Dakota', 'ND'),
+    ('Ohio', 'OH'),
+    ('Oklahoma', 'OK'),
+    ('Oregon', 'OR'),
+    ('Pennsylvania', 'PA'),
+    ('Rhode Island', 'RI'),
+    ('South Carolina', 'SC'),
+    ('South Dakota', 'SD'),
+    ('Tennessee', 'TN'),
+    ('Texas', 'TX'),
+    ('Utah', 'UT'),
+    ('Vermont', 'VT'),
+    ('Virginia', 'VA'),
+    ('Washington', 'WA'),
+    ('West Virginia', 'WV'),
+    ('Wisconsin', 'WI'),
+    ('Wyoming', 'WY');
+;
+
+grant select on proddb.static.tbl_state_name_to_state_abbr_mapping to public;

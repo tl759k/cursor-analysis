@@ -1,0 +1,5 @@
+2025-09-07 23:13:17,302 - etl_runner - INFO - Loaded environment from /Users/tl759k/Documents/GitHub/work/cursor-analytics/config/.env
+2025-09-07 23:13:17,302 - etl_runner - INFO - Starting ETL run for 4 steps with sequential dependencies
+2025-09-07 23:13:17,302 - etl_runner - INFO - Executing step_0 (attempt 1) → s0_tbl_applicant_funnel_timestamp_with_backfill_snowflake.sql
+2025-09-07 23:13:17,302 - etl_runner - INFO - Executing 2 statement(s) from s0_tbl_applicant_funnel_timestamp_with_backfill_snowflake.sql
+2025-09-07 23:13:17,416 - etl_runner - INFO - [1/2] Executing: create or replace table proddb.static.tbl_applicant_funnel_timestamp_with_backfill_snowflake as  wit...

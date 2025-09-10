@@ -57,8 +57,8 @@ select
 from market_facts a
 left join planned_spend b on a.submarket_id = b.submarket_id
 where 1=1
-  and total_deliveries >= 2000
-  and  b.total_budget > 1000
+  -- and total_deliveries >= 2000
+  -- and  b.total_budget > 1000
   -- and submarket_id = 81 -- 280000
   -- and bucket_delivs between 200000 and 350000
   -- and bucket_uh >= 0.01

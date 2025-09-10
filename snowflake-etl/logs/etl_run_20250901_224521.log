@@ -1,0 +1,27 @@
+2025-09-01 22:45:21,813 - etl_runner - INFO - Loaded environment from /Users/tl759k/Documents/GitHub/work/cursor-analytics/config/.env
+2025-09-01 22:45:21,814 - etl_runner - INFO - Starting ETL run for 4 steps with sequential dependencies
+2025-09-01 22:45:21,814 - etl_runner - INFO - Executing step_0 (attempt 1) → s0_tbl_applicant_funnel_timestamp_with_backfill_snowflake.sql
+2025-09-01 22:45:21,814 - etl_runner - INFO - Executing 2 statement(s) from s0_tbl_applicant_funnel_timestamp_with_backfill_snowflake.sql
+2025-09-01 22:45:22,237 - etl_runner - INFO - [1/2] Executing: create or replace table proddb.static.tbl_applicant_funnel_timestamp_with_backfill_snowflake as  wit...
+2025-09-01 22:47:46,916 - etl_runner - INFO - [2/2] Executing: grant select on proddb.static.tbl_applicant_funnel_timestamp_with_backfill_snowflake to public
+2025-09-01 22:47:48,984 - etl_runner - INFO - Executing step_1 (attempt 1) → s1_tbl_major_steps_conversion_analysis_applied_L7D_cohort_snowflake.sql
+2025-09-01 22:47:48,984 - etl_runner - INFO - Executing 2 statement(s) from s1_tbl_major_steps_conversion_analysis_applied_L7D_cohort_snowflake.sql
+2025-09-01 22:47:49,092 - etl_runner - INFO - [1/2] Executing: create or replace table proddb.static.tbl_major_steps_conversion_analysis_applied_L7D_cohort_snowfla...
+2025-09-01 22:48:48,269 - etl_runner - INFO - [2/2] Executing: grant select on proddb.static.tbl_major_steps_conversion_analysis_applied_L7D_cohort_snowflake  to p...
+2025-09-01 22:48:50,109 - etl_runner - INFO - Executing step_2 (attempt 1) → s2_tbl_cvr_reporting_metric_variances_snowflake.sql
+2025-09-01 22:48:50,109 - etl_runner - INFO - Executing 2 statement(s) from s2_tbl_cvr_reporting_metric_variances_snowflake.sql
+2025-09-01 22:48:50,225 - etl_runner - INFO - [1/2] Executing: create or replace table proddb.static.tbl_cvr_reporting_metric_variances_snowflake as  -- Global CVR...
+2025-09-01 22:48:55,291 - etl_runner - INFO - [2/2] Executing: grant select on proddb.static.tbl_cvr_reporting_metric_variances_snowflake to public
+2025-09-01 22:48:57,255 - etl_runner - INFO - Executing step_3 (attempt 1) → s3_tbl_conversion_funnel_idv_substeps_all_timestamps_snowflake.sql
+2025-09-01 22:48:57,255 - etl_runner - INFO - Executing 2 statement(s) from s3_tbl_conversion_funnel_idv_substeps_all_timestamps_snowflake.sql
+2025-09-01 22:48:57,369 - etl_runner - INFO - [1/2] Executing: create or replace table proddb.static.tbl_conversion_funnel_idv_substeps_all_timestamps_snowflake as...
+2025-09-01 22:49:11,731 - etl_runner - INFO - [2/2] Executing: grant select on proddb.static.tbl_conversion_funnel_idv_substeps_all_timestamps_snowflake to public
+2025-09-01 22:49:13,456 - etl_runner - INFO - 
+| query | table_name | duration | last_updated_at | status | error |
+| --- | --- | --- | --- | --- | --- |
+| step_0 | proddb.static.tbl_applicant_funnel_timestamp_with_backfill_snowflake | 02:25 | 2025-09-01 22:47:46 PDT | success |  |
+| step_1 | proddb.static.tbl_major_steps_conversion_analysis_applied_L7D_cohort_snowflake | 00:59 | 2025-09-01 22:48:47 PDT | success |  |
+| step_2 | proddb.static.tbl_cvr_reporting_metric_variances_snowflake | 00:05 | 2025-09-01 22:48:55 PDT | success |  |
+| step_3 | proddb.static.tbl_conversion_funnel_idv_substeps_all_timestamps_snowflake | 00:14 | 2025-09-01 22:49:11 PDT | success |  |
+2025-09-01 22:49:13,457 - etl_runner - WARNING - SLACK_WEBHOOK_URL not set; skipping Slack notification
+2025-09-01 22:49:13,473 - etl_runner - INFO - Wrote notification CSV to /Users/tl759k/Documents/GitHub/work/cursor-analytics/user-analysis/snowflake-etl/outputs/notification_20250901_224521.csv

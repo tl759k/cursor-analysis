@@ -1,0 +1,5 @@
+query,table_name,duration,last_updated_at,status,error
+step_0,proddb.static.tbl_applicant_funnel_timestamp_with_backfill_snowflake,02:25,2025-09-01 22:47:46 PDT,success,
+step_1,proddb.static.tbl_major_steps_conversion_analysis_applied_L7D_cohort_snowflake,00:59,2025-09-01 22:48:47 PDT,success,
+step_2,proddb.static.tbl_cvr_reporting_metric_variances_snowflake,00:05,2025-09-01 22:48:55 PDT,success,
+step_3,proddb.static.tbl_conversion_funnel_idv_substeps_all_timestamps_snowflake,00:14,2025-09-01 22:49:11 PDT,success,

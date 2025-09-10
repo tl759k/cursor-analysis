@@ -1,4 +1,4 @@
-select
+select distinct
     active_week
     , dateadd('week', horizon_spend, active_week) as forecast_week
     , date_trunc('quarter', forecast_week) as forecast_quarter
