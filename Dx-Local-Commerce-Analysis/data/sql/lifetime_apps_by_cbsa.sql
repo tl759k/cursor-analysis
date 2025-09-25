@@ -27,4 +27,15 @@
 
 -- grant select on proddb.static.tbl_junk_lifetime_applicants_by_msa to public;
 
-select * from proddb.static.tbl_junk_lifetime_applicants_by_msa
+select 
+  current_date as Updated_as_of
+  , 'Dasher' dataset
+  , 'Dasher - lifetime applicants share of population by MSA' description
+  , 'MSA' geo_split
+  , MSA as geo_dimension
+  , 'All' as item_category
+  , 'As of' as period
+  , '2025-07-31' current_timestamp
+  , APPS_18PLUS_SHARE_OF_POPULATION
+from proddb.static.tbl_junk_lifetime_applicants_by_msa
+where MSA is not null
