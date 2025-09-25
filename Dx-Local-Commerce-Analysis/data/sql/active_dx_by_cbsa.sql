@@ -35,4 +35,15 @@
 -- grant select on proddb.static.tbl_junk_active_dx_by_msa_2024 to public;
 
 
-select * from proddb.static.tbl_junk_active_dx_by_msa_2024
+select 
+  current_date as Updated_as_of
+  , 'Dasher' dataset
+  , 'Dasher - active dx share of population by CBSA' description
+  , 'CBSA' geo_split
+  , CBSA as geo_dimension
+  , 'All' as item_category
+  , 'As of' as period
+  , '2025-07-31' current_timestamp
+  , ACTIVE_DX_18PLUS_SHARE_OF_POPULATION
+from proddb.static.tbl_junk_active_dx_by_msa_2024
+where CBSA is not null
