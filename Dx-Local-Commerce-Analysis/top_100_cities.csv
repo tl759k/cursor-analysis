@@ -1,0 +1,101 @@
+CITY_STATE,CITY,STATE,POPULATION,CITY_RANK
+"New York, NY",New York,NY,8258035,1
+"Los Angeles, CA",Los Angeles,CA,3820914,2
+"Chicago, IL",Chicago,IL,2664452,3
+"Houston, TX",Houston,TX,2314157,4
+"Phoenix, AZ",Phoenix,AZ,1650070,5
+"Philadelphia, PA",Philadelphia,PA,1550542,6
+"San Antonio, TX",San Antonio,TX,1495295,7
+"San Diego, CA",San Diego,CA,1388320,8
+"Dallas, TX",Dallas,TX,1302868,9
+"Jacksonville, FL",Jacksonville,FL,985843,10
+"Austin, TX",Austin,TX,979882,11
+"Fort Worth, TX",Fort Worth,TX,978468,12
+"San Jose, CA",San Jose,CA,969655,13
+"Columbus, OH",Columbus,OH,913175,14
+"Charlotte, NC",Charlotte,NC,911311,15
+"Indianapolis, IN",Indianapolis,IN,879293,16
+"San Francisco, CA",San Francisco,CA,808988,17
+"Seattle, WA",Seattle,WA,755078,18
+"Denver, CO",Denver,CO,716577,19
+"Oklahoma City, OK",Oklahoma City,OK,702767,20
+"Nashville, TN",Nashville,TN,687788,21
+"Washington, DC",Washington,DC,678972,22
+"El Paso, TX",El Paso,TX,678958,23
+"Las Vegas, NV",Las Vegas,NV,660929,24
+"Boston, MA",Boston,MA,653833,25
+"Detroit, MI",Detroit,MI,633218,26
+"Portland, OR",Portland,OR,630498,27
+"Louisville, KY",Louisville,KY,622981,28
+"Memphis, TN",Memphis,TN,618639,29
+"Baltimore, MD",Baltimore,MD,565239,30
+"Milwaukee, WI",Milwaukee,WI,561385,31
+"Albuquerque, NM",Albuquerque,NM,560274,32
+"Tucson, AZ",Tucson,AZ,547239,33
+"Fresno, CA",Fresno,CA,545716,34
+"Sacramento, CA",Sacramento,CA,526384,35
+"Mesa, AZ",Mesa,AZ,511648,36
+"Atlanta, GA",Atlanta,GA,510823,37
+"Kansas City, MO",Kansas City,MO,510704,38
+"Colorado Springs, CO",Colorado Springs,CO,488664,39
+"Omaha, NE",Omaha,NE,483335,40
+"Raleigh, NC",Raleigh,NC,482295,41
+"Miami, FL",Miami,FL,455924,42
+"Virginia Beach, VA",Virginia Beach,VA,453649,43
+"Long Beach, CA",Long Beach,CA,449468,44
+"Oakland, CA",Oakland,CA,436504,45
+"Minneapolis, MN",Minneapolis,MN,425115,46
+"Bakersfield, CA",Bakersfield,CA,413381,47
+"Tulsa, OK",Tulsa,OK,411894,48
+"Tampa, FL",Tampa,FL,403364,49
+"Arlington, TX",Arlington,TX,398431,50
+"Wichita, KS",Wichita,KS,396119,51
+"Aurora, CO",Aurora,CO,395052,52
+"New Orleans, LA",New Orleans,LA,364136,53
+"Cleveland, OH",Cleveland,OH,362656,54
+"Honolulu, HI",Honolulu,HI,341778,55
+"Anaheim, CA",Anaheim,CA,340512,56
+"Henderson, NV",Henderson,NV,337305,57
+"Orlando, FL",Orlando,FL,320742,58
+"Lexington, KY",Lexington,KY,320154,59
+"Stockton, CA",Stockton,CA,319543,60
+"Riverside, CA",Riverside,CA,318858,61
+"Corpus Christi, TX",Corpus Christi,TX,316595,62
+"Irvine, CA",Irvine,CA,314621,63
+"Cincinnati, OH",Cincinnati,OH,311097,64
+"Santa Ana, CA",Santa Ana,CA,310539,65
+"Newark, NJ",Newark,NJ,304960,66
+"Saint Paul, MN",Saint Paul,MN,303820,67
+"Pittsburgh, PA",Pittsburgh,PA,303255,68
+"Greensboro, NC",Greensboro,NC,302296,69
+"Durham, NC",Durham,NC,296186,70
+"Lincoln, NE",Lincoln,NE,294757,71
+"Jersey City, NJ",Jersey City,NJ,291657,72
+"Plano, TX",Plano,TX,290190,73
+"Anchorage, AK",Anchorage,AK,286075,74
+"North Las Vegas, NV",North Las Vegas,NV,284771,75
+"St. Louis, MO",St. Louis,MO,281754,76
+"Madison, WI",Madison,WI,280305,77
+"Chandler, AZ",Chandler,AZ,280167,78
+"Gilbert, AZ",Gilbert,AZ,275411,79
+"Reno, NV",Reno,NV,274915,80
+"Buffalo, NY",Buffalo,NY,274678,81
+"Chula Vista, CA",Chula Vista,CA,274333,82
+"Fort Wayne, IN",Fort Wayne,IN,269994,83
+"Lubbock, TX",Lubbock,TX,266878,84
+"Toledo, OH",Toledo,OH,265304,85
+"St. Petersburg, FL",St. Petersburg,FL,263553,86
+"Laredo, TX",Laredo,TX,257602,87
+"Irving, TX",Irving,TX,254373,88
+"Chesapeake, VA",Chesapeake,VA,253886,89
+"Glendale, AZ",Glendale,AZ,253855,90
+"Winston-Salem, NC",Winston-Salem,NC,252975,91
+"Port St. Lucie, FL",Port St. Lucie,FL,245021,92
+"Scottsdale, AZ",Scottsdale,AZ,244394,93
+"Garland, TX",Garland,TX,243470,94
+"Boise, ID",Boise,ID,235421,95
+"Norfolk, VA",Norfolk,VA,230930,96
+"Spokane, WA",Spokane,WA,229447,97
+"Richmond, VA",Richmond,VA,229247,98
+"Fremont, CA",Fremont,CA,226208,99
+"Huntsville, AL",Huntsville,AL,225564,100
