@@ -245,8 +245,7 @@ select
       when dda.applied_date between a.week_start and a.week_end and (dda.first_dash_date is null or dda.first_dash_date >= a.week_start) then '1. Applied L7D' 
       when dda.applied_date between dateadd('day', -30, a.week_start) and dateadd('day', -1, a.week_start) and (dda.first_dash_date is null or dda.first_dash_date >= a.week_start) then '2. Applied 7D-30D'
       when dda.applied_date between dateadd('day', -180, a.week_start) and dateadd('day', -31, a.week_start) and (dda.first_dash_date is null or dda.first_dash_date >= a.week_start) then '3. Applied 30D-180D'
-      when dda.applied_date between dateadd('day', -540, a.week_start) and dateadd('day', -181, a.week_start) and (dda.first_dash_date is null or dda.first_dash_date >= a.week_start)  then '4. Applied 180D-540D' 
-      when dda.applied_date < dateadd('day', -540, a.week_start) and (dda.first_dash_date is null or dda.first_dash_date >= a.week_start) then '5. Applied 540D+' 
+      when dda.applied_date < dateadd('day', -180, a.week_start) and (dda.first_dash_date is null or dda.first_dash_date >= a.week_start)then '4. Applied 180D+' 
       when dda.applied_date > a.week_end and (dda.first_dash_date is null or dda.first_dash_date >= a.week_start) then 'Applied After Measurement Period' 
       else 'Unmapped' end as cohort
   -- , dda.is_waitlist -- Block WL only
@@ -317,8 +316,7 @@ select
       when dda.account_activation::date between a.week_start and a.week_end then '1. Activated L7D' 
       when dda.account_activation::date between dateadd('day', -30, a.week_start) and dateadd('day', -1, a.week_start)  then '2. Activated 7D-30D'
       when dda.account_activation::date between dateadd('day', -180, a.week_start) and dateadd('day', -31, a.week_start) then '3. Activated 30D-180D'
-      when dda.account_activation::date between dateadd('day', -540, a.week_start) and dateadd('day', -181, a.week_start) then '4. Activated 180D-540D' 
-      when dda.account_activation::date < dateadd('day', -540, a.week_start) then '5. Activated 540D+' 
+      when dda.account_activation::date < dateadd('day', -180, a.week_start) then '4. Activated 180D+' 
       when dda.account_activation::date > a.week_end then 'Activated After Measurement Period' 
       when dda.account_activation is null then 'null activation date'
       else 'Unmapped' end as cohort 
