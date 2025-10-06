@@ -267,7 +267,10 @@ group by all
 select 
   * 
   -- , div0(account_activation, applicant_count_ex_activate) apply_to_aa_cvr
-  , div0(account_activation, sum(account_activation) over (partition by week_start, is_waitlist)) as aa_proportion 
+  , case 
+      when cohort = '1. Applied L7D' then 0
+      else div0(account_activation, sum(case when cohort != '1. Applied L7D' then account_activation else 0 end) over (partition by week_start, is_waitlist))
+    end as aa_proportion 
 from overall_results
 where 1=1
   -- and week_start = '2025-06-09'
@@ -334,7 +337,10 @@ order by week_start, is_waitlist, cohort asc
 , activation_to_fd_main_table as (
 select
   * 
-  , div0(first_delivery, sum(first_delivery) over (partition by week_start, is_waitlist)) as fd_proportion 
+  , case 
+      when cohort = '1. Activated L7D' then 0
+      else div0(first_delivery, sum(case when cohort != '1. Activated L7D' then first_delivery else 0 end) over (partition by week_start, is_waitlist))
+    end as fd_proportion 
 from activation_to_fd 
 where 1=1
   and cohort not in ('Activated After Measurement Period' , 'Unmapped', 'null activation date')
